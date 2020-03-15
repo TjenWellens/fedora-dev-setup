@@ -1,0 +1,1 @@
+sudo dnf install fedora-workstation-repositories -y
