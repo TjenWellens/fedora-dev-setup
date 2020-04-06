@@ -33,3 +33,6 @@ gcloud container clusters get-credentials $CLUSTER_NAME --zone=$ZONE
 # test if kubectl works
 echo "testing if kubectl is connected to cluster"
 kubectl get nodes
+
+# let jx set kubectl default namespace
+jx ns jx
