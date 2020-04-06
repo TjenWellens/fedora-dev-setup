@@ -8,5 +8,5 @@ echo "user.name $git_username"
 git config --global --replace-all user.email "$git_email"
 git config --global --replace-all user.name "$git_username"
 
-ssh-keygen -t rsa -b 4096 -C "$git_email"
+ssh-keygen -t rsa -b 4096 -C "$git_email" -N '' -f ~/.ssh/id_rsa
 eval "$(ssh-agent -s)"
