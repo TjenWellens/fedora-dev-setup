@@ -58,6 +58,14 @@ echo "" >> .env
 ```
 Don't forget to replace `<my-project-...>`
 
+The docker image `build` step creates a new ssh key.
+You can add this to wherever you need access to. (eg. github)
+No idea how secure this is though...
+
+This docker image is not intended to be pushed anywhere anyway.
+Every laptop should have it's own locally built.
+(because user id should be aligned for permissions)
+
 ### How to run
 ```
 ############################################
